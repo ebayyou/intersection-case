@@ -1,0 +1,54 @@
+.app {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: antialiased;
+  color: #b9b2b2;
+  margin: 60px auto 0;
+  width: 80%;
+}
+
+.main {
+  display: flex;
+
+  article {
+    width: 75%;
+    margin-bottom: 500px;
+
+    section {
+      margin-bottom: 0.6em;
+
+      h2 {
+        margin-bottom: 0.5em;
+      }
+    }
+
+    h1 {
+      margin-bottom: 1em;
+    }
+  }
+
+  aside {
+    width: 25%;
+  }
+
+  aside > div {
+    position: sticky;
+    top: 20px;
+    padding-left: 2em;
+    transition: all 0.3s ease;
+  }
+
+  aside > div > a {
+    display: block;
+    color: #b9b2b2;
+    text-decoration: none;
+    border-left: 1px solid #ccc;
+    transition: all 1s ease;
+    padding-left: 2em;
+  }
+
+  aside a.isActive {
+    font-weight: bold;
+    border-color: rgb(192, 57, 57);
+  }
+}

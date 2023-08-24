@@ -1,0 +1,28 @@
+.page {
+  width: 500px;
+  margin: auto;
+
+  p {
+    margin-bottom: 0.8em;
+    color: #616161;
+  }
+}
+.image-container {
+  max-width: 500px;
+  margin: 0 auto 100px;
+}
+.image-wrapper {
+  width: 100%;
+  background: #eee;
+}
+.lazyload {
+  opacity: 0;
+  width: 100%;
+  height: 360px;
+  transition: opacity 0.5s ease;
+  vertical-align: middle;
+}
+.lazyload.loaded {
+  opacity: 1;
+  height: auto;
+}
